@@ -14,8 +14,7 @@
 
 function graph(value) {
   this.value = value;
-  this.right = null;
-  this.left = null;
+  this.edges = [];
 }
 
 graph.prototype.add = function add(value) {
