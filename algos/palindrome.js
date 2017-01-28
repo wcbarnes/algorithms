@@ -11,10 +11,22 @@
 //   return true;
 // }
 
-function palindrome(str) {
-  if (!str || typeof str !== 'string') return false;
-  str = str.replace(/[^a-zA-Z]/g, '').toLowerCase();
-  return str.split('').reverse().join('') === str;
+// function palindrome(str) {
+//   if (!str || typeof str !== 'string') return false;
+//   str = str.replace(/[^a-zA-Z]/g, '').toLowerCase();
+//   return str.split('').reverse().join('') === str;
+// }
+
+
+function palindrome(str, start = 0, end = str.length - 1) {
+  if (start === 0) {
+    if (!str || typeof str !== 'string') return false;
+    str = str.replace(/[^a-zA-Z]/g, '').toLowerCase();
+    end = str.length - 1;
+  }
+  if (start >= end) return true;
+  if (str[start] !== str[end]) return false;
+  return palindrome(str, ++start, --end);
 }
 
 
