@@ -1,9 +1,21 @@
 /*
  * Create a LinkedList with the following methods
  * a. push
- * b. contains
- * c. getHead
- * d. getTail
+ * b. pop
+ * c. contains
+ * d. getHead
+ * e. getTail
+ * f. addToHead
+ * g. addToTail
+ * h. insert
+ * i. removeValue
+ * j. removePosition
+ * k. isCycle
+ * l. removeDuplicatesIfSorted
+ * m. removeDuplicatesIfUnsorted
+ * n. reverse
+ * o. forEach
+ * p. sort
  */
 
 
@@ -60,11 +72,15 @@ LinkedList.prototype.removeDuplicatesIfSorted = function removeDuplicatesIfSorte
 
 };
 
-LinkedList.prototype.removeDuplicatesIfUnsorted = function removeDuplicatesIfunSorted() {
+LinkedList.prototype.removeDuplicatesIfUnsorted = function removeDuplicatesIfUnsorted() {
 
 };
 
 LinkedList.prototype.reverse = function reverse() {
+
+};
+
+LinkedList.prototype.forEach = function forEach() {
 
 };
 
