@@ -18,15 +18,26 @@
 // }
 
 
-function palindrome(str, start = 0, end = str.length - 1) {
-  if (start === 0) {
-    if (!str || typeof str !== 'string') return false;
-    str = str.replace(/[^a-zA-Z]/g, '').toLowerCase();
-    end = str.length - 1;
+// function palindrome(str, start = 0, end = str.length - 1) {
+//   if (start === 0) {
+//     if (!str || typeof str !== 'string') return false;
+//     str = str.replace(/[^a-zA-Z]/g, '').toLowerCase();
+//     end = str.length - 1;
+//   }
+//   if (start >= end) return true;
+//   if (str[start] !== str[end]) return false;
+//   return palindrome(str, ++start, --end);
+// }
+
+function palindrome(str) {
+  if (!str || typeof str !== 'string') return false;
+  str = str.replace(/[^a-zA-Z]/g, '').toLowerCase();
+  function recurse(string) {
+    if (!string.length) return true;
+    if (string[0] !== string[string.length -1]) return false;
+    return recurse(string.slice(1, string.length - 1));
   }
-  if (start >= end) return true;
-  if (str[start] !== str[end]) return false;
-  return palindrome(str, ++start, --end);
+  return recurse(str);
 }
 
 
