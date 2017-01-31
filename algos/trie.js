@@ -23,7 +23,7 @@ Trie.prototype.remove = function remove() {
 
 };
 
-Trie.prototype.findAnagrams = function findAnagrams() {
+Trie.prototype.findAnagrams = function findAnagrams(string) {
 
 };
 
