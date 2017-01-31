@@ -18,7 +18,7 @@ Queue.prototype.dequeue = function dequeue() {
 
 };
 
-Queue.prototype.forEach = function forEach() {
+Queue.prototype.forEach = function forEach(cb) {
 
 };
 
