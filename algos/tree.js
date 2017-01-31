@@ -1,8 +1,10 @@
 /*
  * Create a Tree with the following methods
- * a. 
- * b. 
- * c. 
+ * a. add
+ * b. contains
+ * c. height
+ * d. remove
+ * e. forEach
  */
 
 function Tree() {
@@ -10,35 +12,23 @@ function Tree() {
   this.length = 0;
 }
 
-Tree.prototype. = function () {
+Tree.prototype.add = function add() {
 
 };
 
-Tree.prototype. = function () {
+Tree.prototype.contains = function contains() {
 
 };
 
-Tree.prototype. = function () {
+Tree.prototype.height = function height() {
 
 };
 
-Tree.prototype. = function () {
+Tree.prototype.remove = function remove() {
 
 };
 
-Tree.prototype. = function () {
-
-};
-
-Tree.prototype. = function () {
-
-};
-
-Tree.prototype. = function () {
-
-};
-
-Tree.prototype. = function () {
+Tree.prototype.forEach = function forEach() {
 
 };
 
