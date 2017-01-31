@@ -1,8 +1,9 @@
 /*
  * Create a Trie with the following methods
- * a. 
- * b. 
- * c. 
+ * a. insert
+ * b. contains
+ * c. remove
+ * d. findAnagrams (find all words in the trie that are anagrams and return them in an array)
  */
 
 function Trie() {
@@ -10,35 +11,19 @@ function Trie() {
   this.length = 0;
 }
 
-Trie.prototype. = function () {
+Trie.prototype.insert = function insert(string) {
 
 };
 
-Trie.prototype. = function () {
+Trie.prototype.contains = function contains(string) {
 
 };
 
-Trie.prototype. = function () {
+Trie.prototype.remove = function remove() {
 
 };
 
-Trie.prototype. = function () {
-
-};
-
-Trie.prototype. = function () {
-
-};
-
-Trie.prototype. = function () {
-
-};
-
-Trie.prototype. = function () {
-
-};
-
-Trie.prototype. = function () {
+Trie.prototype.findAnagrams = function findAnagrams() {
 
 };
 
