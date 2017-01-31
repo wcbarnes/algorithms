@@ -18,7 +18,7 @@ Stack.prototype.pop = function pop() {
 
 };
 
-Stack.prototype.forEach = function forEach() {
+Stack.prototype.forEach = function forEach(cb) {
 
 };
 
