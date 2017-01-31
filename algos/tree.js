@@ -12,11 +12,11 @@ function Tree() {
   this.length = 0;
 }
 
-Tree.prototype.add = function add() {
+Tree.prototype.add = function add(value) {
 
 };
 
-Tree.prototype.contains = function contains() {
+Tree.prototype.contains = function contains(value) {
 
 };
 
@@ -24,11 +24,11 @@ Tree.prototype.height = function height() {
 
 };
 
-Tree.prototype.remove = function remove() {
+Tree.prototype.remove = function remove(value) {
 
 };
 
-Tree.prototype.forEach = function forEach() {
+Tree.prototype.forEach = function forEach(cb) {
 
 };
 
