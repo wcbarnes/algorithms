@@ -23,6 +23,12 @@ describe('countSort should sort the array', () => {
     expect(countSort(strInitial)).to.eql(strExpected);
   });
 
+  it('should sort numbers without a callback', () => {
+    const num = 123456789;
+    const reverse = 987654321;
+    expect(countSort(reverse)).to.eql(num);
+  });
+
   it('should sort a very large array', () => {
     const arr = Array.from({ length: 10000000000 }, () => {
       return Math.floor(Math.random() * 100000000);
