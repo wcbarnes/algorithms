@@ -12,9 +12,20 @@ describe('countSort should sort the array', () => {
     expect(countSort([1, 2, 1, 2, 1, 2])).to.eql([1, 1, 1, 2, 2, 2]);
   });
 
+  it('should sort strings without taking a callback', () => {
+    const alph = 'abcdefghijklmnopqrstuvwxyz';
+    const reverse = alph.split('').reverse.join('');
+
+    const strInitial = 'Hello, my name is George! It\'s very nice to meet you Georgina!';
+    const strExpected = '           !!\',GGHIaaceeeeeeeeeggiiillmmmnnnooooorrrsstttuvyyy';
+
+    expect(countSort(reverse)).to.eql(alph);
+    expect(countSort(strInitial)).to.eql(strExpected);
+  });
+
   it('should sort a very large array', () => {
     const arr = Array.from({ length: 10000000000 }, () => {
-      return Math.floor(Math.random() * 100000);
+      return Math.floor(Math.random() * 100000000);
     });
     expect(countSort(arr)).to.eql(arr.sort((a, b) => a - b));
   });
